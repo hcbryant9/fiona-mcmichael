@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiona's Webpage</title>
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      
+      font-family: "Verdana", "Comic Sans MS", Arial, sans-serif;
+      color: #222;
+      background-image: url('assets/images/cloudgif.gif');
+      background-size: cover; 
+      background-repeat:repeat; 
+      background-position: center; 
+    }
+    .layout {
+      display: block;
+      min-height: 100vh;
+    }
+    
+    .main {
+    flex: 1;
+    padding: 5px;
+    background: rgba(245, 252, 230, 0.85);
+    box-sizing: border-box;
+    border: 3px solid rgba(237, 243, 226, 0.85);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 90%;
+    height: 90vh;
+    }
+</style>
+</head>
+
+<body>
+    <div class="layout">
+    
+        <div class="main">
+        <div style="display: flex; width: 100%; height: 100%;">
+          <!-- Left Frame: Categories & Projects -->
+          <iframe src="left.html" name="leftFrame" style="width: 25%; height: 100%; border: none; overflow-y: auto;"></iframe>
+          <!-- Middle Frame: Project Details -->
+          <iframe src="middle.html" name="middleFrame" style="width: 50%; height: 100%; border: none; overflow: hidden;"></iframe>
+          <!-- Right Frame: Background Info -->
+          <iframe src="right.html" name="rightFrame" style="width: 25%; height: 100%; border: none; overflow: hidden;"></iframe>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Details</title>
+  <style>
+    body {
+      font-family: Verdana, Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: transparent;
+      color: #222;
+      overflow: hidden;
+    }
+    .project {
+      display: none;
+    }
+    #default {
+      display: block;
+    }
+    h2 {
+      margin-top: 0;
+      color: #2a5d8f;
+    }
+    img {
+      max-width: 90%;
+      height: auto;
+      margin-top: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    p {
+      margin-top: 10px;
+    }
+  </style>
+  <script>
+    function showProject() {
+      var hash = window.location.hash.substring(1);
+      var projects = document.querySelectorAll('.project');
+      projects.forEach(function(p) { p.style.display = 'none'; });
+      var el = document.getElementById(hash) || document.getElementById('default');
+      el.style.display = 'block';
+    }
+    window.addEventListener('hashchange', showProject);
+    window.addEventListener('DOMContentLoaded', showProject);
+  </script>
+</head>
+<body>
+  <div id="default" class="project">
+    <h2>Welcome!</h2>
+    <p>Select a project from the left to see details here.</p>
+  </div>
+  <div id="video1" class="project">
+    <h2>Short Film</h2>
+    <p>A short film exploring visual storytelling.</p>
+    <img src="assets/images/cloudgif.gif" alt="Short Film">
+  </div>
+  <div id="video2" class="project">
+    <h2>Animation</h2>
+    <p>Hand-drawn animation project.</p>
+    <img src="assets/images/cloudgif.gif" alt="Animation">
+  </div>
+  <div id="print1" class="project">
+    <h2>Poster Series</h2>
+    <p>Collection of posters for events.</p>
+    <img src="assets/images/cloudgif.gif" alt="Poster Series">
+  </div>
+  <div id="print2" class="project">
+    <h2>Art Prints</h2>
+    <p>Limited edition art prints.</p>
+    <img src="assets/images/cloudgif.gif" alt="Art Prints">
+  </div>
+  <div id="mag1" class="project">
+    <h2>Zine</h2>
+    <p>Indie zine publication.</p>
+    <img src="assets/images/cloudgif.gif" alt="Zine">
+  </div>
+  <div id="mag2" class="project">
+    <h2>Editorial</h2>
+    <p>Magazine editorial design.</p>
+    <img src="assets/images/cloudgif.gif" alt="Editorial">
+  </div>
+  <div id="design1" class="project">
+    <h2>Logo</h2>
+    <p>Logo design for a brand.</p>
+    <img src="assets/images/cloudgif.gif" alt="Logo">
+  </div>
+  <div id="design2" class="project">
+    <h2>Web Design</h2>
+    <p>Modern web design project.</p>
+    <img src="assets/images/cloudgif.gif" alt="Web Design">
+  </div>
+</body>
+</html>
