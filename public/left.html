@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Categories</title>
   <style>
     body {
@@ -11,6 +12,45 @@
       background: transparent;
       color: #222;
       overflow-y: auto;
+      font-size: 1em;
+    }
+    @media (max-width: 700px) {
+      body {
+        font-size: 0.9em;
+        padding: 4px;
+      }
+      h2 {
+        font-size: 1em;
+      }
+      ul {
+        padding-left: 2px;
+      }
+      a {
+        font-size: 0.95em;
+      }
+    }
+
+    /* Old school scrollbar styling for Webkit browsers */
+    ::-webkit-scrollbar {
+      width: 16px;
+      background: #e0e0e0;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #b0b0b0;
+      border: 2px solid #888;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    ::-webkit-scrollbar-track {
+      background: #e0e0e0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    /* Fallback for Firefox */
+    html {
+      scrollbar-color: #b0b0b0 #e0e0e0;
+      scrollbar-width: thin;
     }
     h2 {
       margin-top: 20px;
@@ -38,23 +78,38 @@
 <body>
   <h2>FREELANCE</h2>
   <ul>
-    <li><a href="middle.html#video1" target="middleFrame">Project: Short Film</a></li>
-    <li><a href="middle.html#video2" target="middleFrame">Project: Animation</a></li>
+    <li><a href="middle.html#video1" target="middleFrame">Project: 2025</a></li>
+    <li><a href="middle.html#video2" target="middleFrame">Project: 2024</a></li>
+    <li><a href="middle.html#video3" target="middleFrame">Project: 2023</a></li>
+    <li><a href="middle.html#video4" target="middleFrame">Project: 2022</a></li>
   </ul>
   <h2>BOOKS</h2>
   <ul>
-    <li><a href="middle.html#print1" target="middleFrame">Project: Poster Series</a></li>
-    <li><a href="middle.html#print2" target="middleFrame">Project: Art Prints</a></li>
+    <li><a href="middle.html#print1" target="middleFrame">Project: 2025</a></li>
+    <li><a href="middle.html#print2" target="middleFrame">Project: 2024</a></li>
+    <li><a href="middle.html#print3" target="middleFrame">Project: 2023</a></li>
+    <li><a href="middle.html#print4" target="middleFrame">Project: 2022</a></li>
   </ul>
   <h2>PRINTMAKING</h2>
   <ul>
-    <li><a href="middle.html#mag1" target="middleFrame">Project: Zine</a></li>
-    <li><a href="middle.html#mag2" target="middleFrame">Project: Editorial</a></li>
+    <li><a href="middle.html#mag1" target="middleFrame">Project: 2025</a></li>
+    <li><a href="middle.html#mag2" target="middleFrame">Project: 2024</a></li>
+    <li><a href="middle.html#mag3" target="middleFrame">Project: 2023</a></li>
+    <li><a href="middle.html#mag4" target="middleFrame">Project: 2022</a></li>
   </ul>
   <h2>VIDEO</h2>
   <ul>
-    <li><a href="middle.html#design1" target="middleFrame">Project: Logo</a></li>
-    <li><a href="middle.html#design2" target="middleFrame">Project: Web Design</a></li>
+    <li><a href="middle.html#design1" target="middleFrame">Project: 2025</a></li>
+    <li><a href="middle.html#design2" target="middleFrame">Project: 2024</a></li>
+    <li><a href="middle.html#design3" target="middleFrame">Project: 2023</a></li>
+    <li><a href="middle.html#design4" target="middleFrame">Project: 2022</a></li>
+  </ul>
+  <h2>OTHER</h2>
+  <ul>
+    <li><a href="middle.html#other1" target="middleFrame">Project: 2025</a></li>
+    <li><a href="middle.html#other2" target="middleFrame">Project: 2024</a></li>
+    <li><a href="middle.html#other3" target="middleFrame">Project: 2023</a></li>
+    <li><a href="middle.html#other4" target="middleFrame">Project: 2022</a></li>
   </ul>
 </body>
 </html>
